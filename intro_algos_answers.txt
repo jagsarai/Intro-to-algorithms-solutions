@@ -1,0 +1,110 @@
+3 Primitive Algorithims Pseudo Code
+
+Making Toast
+
+DEF Toast(breads, jam_jar, toaster, knife, plate, left_hand, right_hand, table, drawer)
+    TAKE OUT breads FROM drawer and SET onto table 
+    TAKE OUT toaster WITH left_hand and right_hand from drawer
+    SET toster down on table
+    PLUG IN toaster to wall socket
+    SET Toaster time
+    TAKE OUT 1 peice of bread FROM breads WITH right_hand
+    PUT bread INTO toaster
+    TAKE OUT 1 peice of bread FROM breads WITH right_hand
+    PUT bread INTO toaster
+    PULL handle down ON toaster with right_hand 
+    WHEN toast complete
+        TAKE OUT 1 peice bread with right_hand FROM toaster
+        TAKE OUT 1 peice of bread with right_hand FROM toaster
+    END
+    TRUN OFF toaster
+    PUT breads ON plate
+    TAKE OUT jam_jar with right_hand FROM drawer
+    PUT jam_jar on table 
+    OPEN jam_jar with right_hand
+    TAKE OUT knife with left_hand FROM drawer
+    FOR EACH bread
+        PICKUP bread from plate with left_hand 
+        WHILE bread in not 100% covered 
+            TAKE OUT x amount of jam FROM jam_jar WITH knife
+            SPREAD x onto bread
+        END
+    END
+    PUT the two peices of bread together
+END
+
+Picking what to wear
+
+DEF what_to_wear(closet, choice_prefrence)
+    SET variable underwears to []
+    SET variable shirts to []
+    SET variable pants to []
+    SET variable socks to []
+    SET variable shoes to [] 
+
+    FOR each item in closet 
+        IF type of closet[item] equals to 'underwear'
+            ADD (closet[item]) to underwears
+        END
+        IF type of closet[item] equals to 'shirt'
+            ADD (closet[item]) to shirts
+        END
+        IF type of closet[item] equals to 'pants'
+            ADD (closet[item]) to pants
+        END
+        IF type of closet[item] equals to 'socks'
+            ADD (closet[item]) to socks
+        END 
+        IF type of closet[item] equals to 'shoes'
+            ADD (closet[item]) to shoes
+        END
+    END
+
+    FOR each underwear in underwears
+        IF choice_prefrence Includes underwear 
+            PUT on underwear
+            RETURN 
+        END
+    END
+
+    FOR each shirt in shirts
+        IF choice_prefrence Includes shirt 
+            PUT on shirt
+            RETURN 
+        END
+    END
+
+    FOR each pant in pants
+        IF choice_prefrence Includes pant 
+            PUT on pant
+            RETURN 
+        END
+    END
+
+    FOR each sock_pair in socks
+        IF choice_prefrence Includes sock_pair 
+            PUT on sock_pair
+            RETURN 
+        END
+    END
+
+    FOR each shoe_pair in shoes
+        IF choice_prefrence Includes shoe_pair 
+            PUT on shoe_pair
+            RETURN 
+        END
+    END
+
+END
+
+Washing hands 
+
+DEF washing_hands(hands, soap_dispenser, sink)
+    SET sink.running_water to true
+    DISPENSE x amount of soap from soap_dispenser
+    RUB hands together 
+    WHILE hands are not clean
+        PUT hands under sink.running_water
+    END
+    SET sink.running_water to False
+END

@@ -1,0 +1,19 @@
+1.Given the alphabetically sorted collection in this checkpoint, how many iterations would it take to find the value G using linear search?
+
+It would take 7 iterations using linear search because we would have to go through each letter one by one till we get a letter that matches with G.
+
+2. Given the alphabetically sorted collection in this checkpoint, how many iterations would it take to find the value G using binary search?
+
+It would take 3 iternations using recussion, we would start with 26 letters total and the midpoint would be the 13th letter, we would compare the value with the midpoint and if it is less(which it is), we would make the new endpoint to the 12th letter and find its midpoint 6. We would compare its value with G and find that it is greater and then we would made the starting index at 6+1. And at that point we will be left with the base case of 1 value in the array. If that is the value then we have found G. If not then G is not in the array. 
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+1. Given an unsorted collection of a million items, which algorithm would you choose between linear search and binary search? Would you use an iterative or recursive solution? Explain your reasoning.
+
+We would chose linear search with an unsorted collection becuase we cannot perform proper binary search if collection is not sorted, there would be no way of accurately comparing a given value with the midpoint and eliminating half of the collection. We would use iterative solutions because we dont have a way of making the problem smaller. We would need to compare a given value with atmost all items. 
+
+2. Given a sorted collection of a million items, which algorithm would you choose between linear search and binary search? Would you use an iterative or recursive solution? Explain your reasoning.
+
+We would use binary search with sorted collection because we can easily compare a given value with the midpoint and see if it is greater or less than the midpoint. We would use a recursive solution because we have a base case of 1 item. Therefore we can keep cutting down the problem.
+

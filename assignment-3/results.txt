@@ -1,0 +1,37 @@
+The results show that for small arrays like size 50 with random numbers 1-50, we get similar real world times 
+    bucketsort - 0.000082
+    heapsort - 0.000091
+    quicksort - 0.000072
+
+When the array size changes to 1000 and our random number variance stay the same, the performance of all three are similars
+    bucketsort - 0.001026
+    heapsort - 0.002041
+    quicksort - 0.002770
+
+When we increase the size of the array to 100000 and keep our random number variance, we see that quicksort does not perform well. It is at 14 seconds. Heapsort performs the fastest. Bucketsort is nearing the slow mark taking almost 4 seconds, because our variance of numbers in the array are similar so they are stored in the same buckets and thus sorting takes longer. 
+    bucketsort - 3.886232
+    heapsort - 0.348458
+    quicksort - 14.356921
+
+When we increase the size of the array to a million, bucketsort is complete unresponsible and will not finish sorting in a resonable time. Heapsort finishes at a decent but almost inadequete time of 4 seconds. Quicksort also is unresponssive 
+    heapsort - 4.005868
+
+When we run our million sized array with a greater variance in the value of data from 1-50 to 1-10000. We see that bucketsort and quicksort are again within somewhat of a resonable time thus suggesting that if we have more random values in our data then bucketsort and quicksort will become more performant than heapsort when working with large sized arrays. 
+    bucketsort - 7.511740
+    heapsort - 4.015808
+    quicksort - 9.122919
+
+1 million records with variance of 1-100000. 
+    bucketsort - 1.892961
+    heapsort - 3.996041
+    quicksort - 3.318731
+
+10 million records with variance of 1-100000.
+    bucketsort - 97.982642
+    heapsort - 60.420427
+    quicksort - 100.991372
+    
+10 million records with variance of 1- 1 million
+    bucketsort - 24.100997
+    heapsort - 49.784016
+    quicksort - 40.786662

@@ -1,0 +1,22 @@
+1. Describe an analogy for relating an algorithm that has efficiency O(1) and another algorithm that has O(2n). An example would be:
+An O(1) function is like taking a flight from here to new york, and O(2^n) is like walking form here to new york.
+
+2. The best case senario for binary search is that we find the node that we are looking for right at the top of the tree. 
+
+3. The worst case is that we have to taverse through the entire tree and our node is the last node located in the tree. 
+
+4. The bounded case senario is that our node is located in one half of the tree and at each iteration we split the tree in halves and eliminate the other half recursively. 
+
+5. see chart file
+
+6. The limit of f(n) as n goes towards infinity is positive infinity
+
+7. The Big O for this algorithm is O(n^2)
+
+8. See chart file
+
+10. The Big O of binary serach is O(n)
+
+11. The Big Omega of binary serach is 1
+
+12 The Big Theta of binary serach is log(n)

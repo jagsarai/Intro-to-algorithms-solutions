@@ -1,0 +1,11 @@
+Big O analysis of version one 
+
+The time complexity for this algorithim is O(n^2). The initial combiantion of the two arrays loops over each value in one of the arrays and pushes it into another. The time taken for that is O(n). Then we loop through all the values in the combined array and with each itteration our while loop will run at most (sorted_array.lenght - 1) times. Therefore we can characterize that as another O(n) operation. So our sorting will take O(n^2) time. Taking away lower terms and constants we are left with big O(n^2).
+
+Big O analysis of version two
+
+The time complexity for this algorithim is O(n log (n)). The initial combining of the two arrays into one will take O(n) time since we loop through each value of one of the arrays and add them to the other. From there we implement a merge sort function to sort the combined array. For that we split the array by two each time till the base case of one element which take n log(n) time. We then compare the array elements and sort which takes some constant times n time. So in total our time function will look something like this n(log(n)) + c(n) + c(n). If we drop the constants and lower end terms, we are left with n(log(n)) time complexity.
+
+Big O analysis version three
+
+Here we were concerned more with space than time, therefore we decided to use a sort function that would do operations without making extra temporary arrays. Therefore the initial combiantion of the arrays will take some constant times n time C(n). The actual sorting for the combined array will take O(n^2) time, because we are comparing all other values with each value in the array. For each value in the array we make up to array.length itterations. Our functions looks like O(n^2) + c(n). After removing constants and lower terms, we can reduce down to O(n^2) time complexity.
